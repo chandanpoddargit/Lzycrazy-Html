@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* border: 2px solid red; */
+}
+.leftContainer {
+  width: 60vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.rightContainer {
+  width: 40vw;
+  height: 100vh;
+}
+.firstImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lazyImage {
+  height: 100px;
+
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.searchBar {
+  display: flex;
+
+  align-items: center;
+  margin-top: 20px;
+  height: 2rem;
+  width: 30%;
+  border: 1px solid black;
+  gap: 20px;
+  padding: 5px 10px 5px 10px;
+
+  border-radius: 30px;
+}
+#search {
+  width: 80%;
+  border: none;
+  font-size: 12px;
+  outline: none;
+  background-color: transparent;
+}
+#microphone:hover {
+  background-color: rgb(180, 21, 21);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+#image {
+  height: 25rem;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.rightContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightHand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(231, 225, 225, 0.781);
+  box-shadow: 1px 1px 8px rgba(177, 205, 189, 0.547);
+  flex-direction: column;
+  height: 22rem;
+  width: 30rem;
+  padding: 20px;
+}
+form input {
+  height: 55px;
+  width: 430px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(219, 208, 208);
+  border-radius: 5px;
+}
+form .password {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+.password #pass_icon {
+  width: 34px;
+
+  padding-right: 5px;
+
+  position: absolute;
+  margin-left: 380px;
+  cursor: pointer;
+}
+form button {
+  height: 45px;
+  width: 430px;
+  background-color: rgb(5, 5, 87);
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  border-radius: 5px;
+}
+form button:hover {
+  background-color: rgb(14, 90, 230);
+}
+#forget {
+  font-size: 18px;
+  color: rgb(15, 63, 219);
+  text-decoration: none;
+}
+#forget:hover {
+  text-decoration: underline;
+}
+#newAccount {
+  background-color: rgb(52, 202, 22);
+  width: 180px;
+  font-size: 15px;
+  border-radius: 5px;
+  height: 55px;
+}
+#newAccount:hover {
+  background-color: rgb(6, 158, 6);
+}
+article {
+  padding: 13px;
+  font-size: 16px;
+}
+#lowerFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 22px;
+  list-style: none;
+  text-decoration: none;
+  padding: 20px;
+}
+#about {
+  font-size: 16px;
+}
+.links a,
+.links2 a {
+  text-decoration: none;
+  color: black;
+}
+
+.links2 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 22px;
+  list-style: none;
+  text-decoration: none;
+  padding: 20px;
+}
+.overlay {
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  position: absolute;
+  position: fixed;
+  height: 75%;
+  width: 50%;
+  margin: auto;
+  top: 280px;
+  left: 500px;
+  bottom: 300px;
+  background-color: rgb(255, 255, 255);
+  display: none;
+}
+.topOverlay {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topOverlay2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topOverlay .fHeading {
+  font-size: 40px;
+  color: rgb(15, 141, 44);
+}
+.topOverlay2 .sHeading {
+  font-size: 22px;
+}
+.overlayForm {
+  /* border: 1px solid rgb(128, 0, 111); */
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.nameForm label {
+  vertical-align: text-top;
+  height: 20px;
+  margin: 10px;
+}
+.nameForm {
+  display: flex;
+  overflow: hidden;
+}
+.secondNameForm {
+  margin-right: 133px;
+}
+.nameForm input {
+  height: 35px;
+  width: 300px;
+}
+.nameForm input:hover {
+  border: 1px solid black;
+}
+.emailForm {
+  margin-right: 180px;
+}
+#email {
+  height: 35px;
+  width: 100%;
+  /* margin-right: 100px; */
+}
+#email:hover {
+  border: 1px solid black;
+}
+.emailForm label {
+  vertical-align: text-top;
+  margin: 10px;
+}
+#password {
+  height: 35px;
+  width: 100%;
+}
+#password:hover {
+  border: 1px solid black;
+}
+.passwordForm {
+  margin-right: 180px;
+}
+.passwordForm label {
+  vertical-align: top;
+  margin: 10px;
+}
+#date {
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+}
+.dateForm {
+  margin-right: 180px;
+  /* cursor: pointer; */
+}
+.dateForm label {
+  margin: 10px;
+}
+#date:hover {
+  border: 1px solid black;
+}
+#genderForm {
+  display: flex;
+}
+#genderForm input {
+  height: 20px;
+  width: 20px;
+}
+#maleGender:hover {
+  /* border: 2px solid blue; */
+  /* background-color: blue; */
+  /* color: blue; */
+  cursor: pointer;
+}
+#genderForm label {
+  vertical-align: top;
+}
+.country img {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+}
+.country {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  height: 45px;
+  width: 30%;
+  border-radius: 5px;
+  border-color: rgb(219, 211, 211);
+  margin: 8px;
+}
+.country .countries {
+  margin: 5px;
+  /* height: 2rem; */
+  width: 80%;
+  border: none;
+  outline: none;
+}
+.countryForm {
+  display: flex;
+  /* justify-content: space-around; */
+  /* border: 2px solid rgb(16, 121, 12); */
+  align-items: center;
+}
+.stateForm {
+  margin: 20px;
+  margin-left: 105px;
+  /* cursor: pointer; */
+  border-radius: 5px;
+}
+.form-control {
+  height: 45px;
+  width: 320px;
+  cursor: pointer;
+  border-radius: 5px;
+  border-color: rgb(219, 211, 211);
+}
+.form-control:hover {
+  border: 1px solid black;
+}
+.cityForm {
+  display: flex;
+  justify-content: flex-start;
+}
+#city {
+  height: 35px;
+  width: 81%;
+}
+#city:hover {
+  border: 1px solid black;
+}
+.textForm {
+  font-size: 12px;
+  margin-left: 50px;
+}
+#overlayFooter {
+  width: 73%;
+  height: 35px;
+  margin-left: 110px;
+  background-color: rgb(4, 4, 71);
+  color: white;
+  font-size: 18x;
+  cursor: pointer;
+  margin-top: 10px;
+  /* margin-bottom: 20px; */
+}
+/* section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: 2px solid rgb(43, 226, 113);
+  padding: 5px;
+} */
+.passwordForm #overlayPass_icon {
+  width: 34px;
+  /* border: 1px solid red; */
+  padding-right: 5px;
+  position: absolute;
+  margin-left: 540px;
+  margin-top: 32px;
+  cursor: pointer;
+}
+.crossOverlay{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-end;
+ margin-top: 25px;
+ margin-right: 20px;
+}

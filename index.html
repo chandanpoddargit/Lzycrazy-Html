@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lazyCrazy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="leftContainer">
+                <div class="firstImage">
+                    <img src="lazyCrazy" alt="lazy_crazy" id="lazyImage">
+                </div>
+                <div class="searchBar">
+                    <input type="text" name="search" placeholder="Coming Soon..." id="search">
+                    <i class="fa-solid fa-microphone"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div>
+                    <div class="slideImage">
+                        <img src="images.avif" alt="slide_image" id="image">
+                    </div>
+                </div>
+            </div>
+            <div class="rightContainer">
+                <form>
+                    <div class="rightHand">
+                        <div class="email">
+                            <input type="email" name="email" placeholder="Email Address or Phone No">
+                        </div>
+                        <div class="password">
+                            <input type="password" name="password" placeholder="Enter password" id="password_hide">
+                            <img src="pass_hide.png" id="pass_icon">
+                        </div>
+                        <div class="button">
+                            <button type="button" name="button">Log In</button>
+                        </div>
+                        <div class="forgot">
+                            <a id="forget" href="/">Forgotten password? </a>
+                        </div>
+                        <br>
+                        <br>
+                        <hr>
+                        <div class="Account" id="createAccount">
+                            <input type="button" value="Create New Account" id="newAccount" onclick="createForm()">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <section>
+        <div class="overlay" id="signupForm">
+            <div class="crossOverlay" onclick="closeSignupForm()">
+                <i class="fa-solid fa-square-xmark"></i>
+            </div>
+            
+            <div class="topOverlay">
+                <h1 class="fHeading">Signup</h1>
+            </div>
+            <div class="topOverlay2">
+                <h7 class="sHeading">Its quick & Easy. </h7>
+            </div>
+            <div>
+                <form class="overlayForm">
+                    <div class="nameForm">
+                        <div class="firstNameForm">
+                            <label for="first">First Name</label>
+                            <input type="text" id="first" placeholder="First Name">
+                        </div>
+                        <div class="secondNameForm">
+                            <label for="last">Last name</label>
+                            <input type="text" id="last" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="emailForm">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="passwordForm">
+                        <label for="password">Password</label>
+                        <img src="pass_hide.png" id="overlayPass_icon">
+                        <input type="password" name="password" id="password">
+
+                    </div>
+                    <div class="dateForm">
+                        <label for="date">Date Of Birth</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+        
+                    <div class="countryForm">
+                        <div class="country">
+                            <img src="https://www.lzycrazy.com/assets/about/india.png" alt="image">
+                            <select class="countries" name="India" id="multipleCountries"
+                                onchange="handelChangeCountry()"></select>
+                        </div>
+                        <div class="stateForm">
+                            <!-- <label for="inputState">State</label> -->
+                            <select class="form-control" id="inputState" onchange="handelChangeState()">
+                                <!-- here need to append data from state api -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="cityForm">
+                        <select class="text" placeholder="City" id="city" onchange="handelChangeCity()"></select>
+                    </div>
+                    <div class="textForm">
+                        <p>
+                            By Continuing, You Agree to Lzy Crazy Term & Conditions and Confirm that You have Read Lzy
+                            Crazy Privacy Policy .
+                        </p>
+                    </div>
+                </form>
+                <div class="overlayFooter">
+                    <input type="submit" value="SIGNUP" id="overlayFooter" onclick="submitSignUpForm()">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="leftHandSide">
+            <div class="leftFooter">
+                <article>India</article>
+                <hr>
+            </div>
+            <div id="lowerFooter">
+                <div class="leftLowerFooter">
+                    <ul class="links">
+                        <li id="about"><a href="About/about.html">About</a></li>
+                        <li id="advertising"><a href="#">Advertising</a></li>
+                        <li id="business"> <a href="#">Business</a></li>
+                        <li id="investor"><a href="#">Investor</a></li>
+                        <li id="join"><a href="#">Join Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="rightLowerFooter">
+                    <ul class="links2">
+                        <li><a href="/">Privacy & Policy</a></li>
+                        <li><a href="/">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="script.js"></script>
+<script src="country.js"></script>
+
+</html>
