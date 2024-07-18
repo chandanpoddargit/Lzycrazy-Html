@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  padding: 20px;
+  margin: 30px;
+}
+.topHeading {
+  text-decoration: underline;
+}
+.middleHeading {
+  margin: 10px;
+  padding: 20px;
+  /* border: 1px solid red; */
+  width: 50%;
+  box-shadow: 1px 1px 1px 3px rgb(247, 243, 243);
+}
+.first_term {
+  margin: 20px;
+}
+.second_term {
+  margin: 20px;
+}
+.third_term {
+  margin: 20px;
+}
+.fourth_term {
+  margin: 20px;
+}
+.fifth_term {
+  margin: 20px;
+}
+.sixth_term {
+  margin: 20px;
+}
+.seventh_term {
+  margin: 20px;
+}
+.seventh_term p {
+  margin: 10px;
+}
+
+ @media (max-width: 500px) {
+  .middleHeading {
+    width: 100%;
+    padding: 0;
+    
+    
+  }
+}

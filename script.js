@@ -2,7 +2,7 @@
 let eyeIcon = document.getElementById("password_hide");
 let selectState = document.getElementById("inputState");
 let selectCity = document.getElementById("city");
-console.log("selectCity:", selectCity);
+// console.log("selectCity:", selectCity);
 let selectCountry = document.getElementById("multipleCountries");
 let overlay = document.getElementById("overlayFooter");
 // let (code in countryList);{
@@ -12,7 +12,7 @@ let country_code;
 // let city_code="https://api.countrystatecity.in/v1/countries/IN/cities"
 let state;
 let city;
-console.log("city:", city);
+// console.log("city:", city);
 let country;
 let showIcon = document.getElementById("pass_icon");
 
@@ -56,7 +56,7 @@ let getState = async (country_code) => {
 // getState();
 
 let appendState = (state = []) => {
-  console.log("state:", state);
+  // console.log("state:", state);
   selectState.innerHTML = null;
   state.length > 0 &&
     state.forEach((element) => {
@@ -94,7 +94,7 @@ let appendCity = (city = []) => {
   selectCity.innerHTML = null;
   city.length > 0 &&
     city.forEach((element) => {
-      console.log("element:", element);
+      // console.log("element:", element);
       let option = document.createElement("option");
       option.innerText = element.name;
       option.value = element.name;
@@ -104,7 +104,7 @@ let appendCity = (city = []) => {
 };
 let handelChangeCity = () => {
   city = selectCity.value;
-  console.log("city:", city);
+  // console.log("city:", city);
 };
 
 let getCountry = async () => {
@@ -113,6 +113,13 @@ let getCountry = async () => {
       "X-CSCAPI-KEY":
         "TXlkV2x4cnRaVnJPd3MyZ2NjYjFzdFcyck5DMzdsczFxSVJJb3NpRQ==",
     },
+
+    // method:"POST",
+    // body:JSON.stringify({payload}),
+    // headers: {
+    //  "Authorization":
+    //         "Basic TFpZQ1JBWlk6UUcxa0pHNEMhUWhRaUZ3RE9xU3lIIQ==",
+    // },
   });
   country = await country.json();
   appendCountry(country);
@@ -162,13 +169,33 @@ let submitSignUpForm = () => {
   // payload.overlay_gender = overlay_gender.value;
   console.log(payload);
 };
-let closeSignupForm=()=>{
-  let signUp=document.getElementById("signupForm")
-  signUp.style.display="none"
-}
-let createForm=()=>{
-  let openForm=document.getElementById("signupForm")
-  openForm.style.display="block"
-}
+let closeSignupForm = () => {
+  let signUp = document.getElementById("signupForm");
+  signUp.style.display = "none";
+};
+let createForm = () => {
+  let openForm = document.getElementById("signupForm");
+  openForm.style.display = "block";
+};
+
 getCountry();
 
+let submitForm = async () => {
+  // console.log("hello")
+  let payload1 = {};
+  let email = document.getElementById("Input_email");
+  let password = document.getElementById("password_hide");
+
+  payload1.email = email.value;
+  payload1.password = password.value;
+  // console.log(payload1);
+  let login = await fetch(`https://api.lzycrazy.com/api/user/auth/login`, {
+    method: "POST",
+    body: JSON.stringify(payload1),
+    headers: {
+      Authorization: "Basic TFpZQ1JBWlk6UUcxa0pHNEMhUWhRaUZ3RE9xU3lIIQ==",
+    },
+  });
+  let response = await login.json()
+  console.log('response:', response)
+};

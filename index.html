@@ -32,14 +32,14 @@
                 <form>
                     <div class="rightHand">
                         <div class="email">
-                            <input type="email" name="email" placeholder="Email Address or Phone No">
+                            <input type="email" name="email" placeholder="Email Address or Phone No" id="Input_email">
                         </div>
-                        <div class="password">
+                        <div class="password" id="input_password">
                             <input type="password" name="password" placeholder="Enter password" id="password_hide">
                             <img src="pass_hide.png" id="pass_icon">
                         </div>
                         <div class="button">
-                            <button type="button" name="button">Log In</button>
+                            <button type="button" name="button" onclick="submitForm()">Log In</button>
                         </div>
                         <div class="forgot">
                             <a id="forget" href="/">Forgotten password? </a>
@@ -60,7 +60,7 @@
             <div class="crossOverlay" onclick="closeSignupForm()">
                 <i class="fa-solid fa-square-xmark"></i>
             </div>
-            
+
             <div class="topOverlay">
                 <h1 class="fHeading">Signup</h1>
             </div>
@@ -93,7 +93,7 @@
                         <label for="date">Date Of Birth</label>
                         <input type="date" name="date" id="date">
                     </div>
-        
+
                     <div class="countryForm">
                         <div class="country">
                             <img src="https://www.lzycrazy.com/assets/about/india.png" alt="image">
@@ -141,7 +141,7 @@
                 </div>
                 <div class="rightLowerFooter">
                     <ul class="links2">
-                        <li><a href="/">Privacy & Policy</a></li>
+                        <li><a href="privacy & policy/privacy.html">Privacy & Policy</a></li>
                         <li><a href="/">Help</a></li>
                     </ul>
                 </div>
