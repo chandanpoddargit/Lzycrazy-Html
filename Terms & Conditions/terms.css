@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .terms {
-  display:  flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -16,7 +16,7 @@
   text-decoration: underline;
 }
 .middleHeading {
-  margin: 10px;
+  margin: 10 px;
   padding: 20px;
   /* border: 1px solid red; */
   width: 50%;
