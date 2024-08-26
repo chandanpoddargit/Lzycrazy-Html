@@ -1,6 +1,6 @@
 // console.log("hello")
 let eyeIcon = document.getElementById("password_hide");
-let selectState = document.getElementById("inputState");
+let selectState =  document.getElementById("inputState");
 let selectCity = document.getElementById("city");
 // console.log("selectCity:", selectCity);
 let selectCountry = document.getElementById("multipleCountries");
